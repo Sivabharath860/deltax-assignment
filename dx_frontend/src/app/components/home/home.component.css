@@ -1,0 +1,30 @@
+.outer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    gap: 80px;
+}
+
+.inner{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 300px;
+    width: 260px;
+    background-color: rgba(19, 18, 18, 0.904);
+}
+.inner:hover{
+    background-color: rgba(19, 18, 18, 0.61);
+}
+
+.img{
+    width: 180px;
+    height: 250px;
+    /* padding-bottom: 50px; */
+}
+
+h3{
+    color:aliceblue;
+}
