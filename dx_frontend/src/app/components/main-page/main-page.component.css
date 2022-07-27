@@ -1,0 +1,74 @@
+body {
+    overflow-x: hidden;
+  }
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    width: 15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+
+.heading{
+      display:flex;
+      align-items: center;
+      /* justify-content: center; */
+      font-size: xx-large;
+      font-weight: bold;
+      padding-bottom: 20px;
+  }
+
+  .icon {
+    
+    width: 50px;
+    height: auto;
+    display: block;
+    /* Other styles here */
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+/* .item{
+    padding-left: 20%;
+} */
+
+.content{
+  margin-left: 15rem;
+  position: relative;
+}
+
+.sbar{
+  color:white; 
+  bottom: 0px;
+  position: fixed;
+}
