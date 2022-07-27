@@ -1,7 +1,7 @@
 # dx-assignment
 ## _Spotify Clone_
 
-![plot](./directory_1/directory_2/.../directory_n/plot.png)
+![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/addA.png?raw=true)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
