@@ -7,7 +7,7 @@
 
 This is a spotify clone developed using Angular, Node js, MySql.
 
-## Features
+# Features
 
 # Display's Top 10 songs based on average user rating.
 - ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/topTenS.png?raw=true)
@@ -18,7 +18,7 @@ This is a spotify clone developed using Angular, Node js, MySql.
 - ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/rating.png?raw=true)
 - ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/afterRate.png?raw=true)
 # User can add a new song with existing artists. 
-- ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/addS.png?raw=true)
+- ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/addS1.png?raw=true)
 # Incase the artist is not in the database ,user can add a new artist in the same screen.
 - ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/addA.png?raw=true)
 # Also included a user authentication page.
