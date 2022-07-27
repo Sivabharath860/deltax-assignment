@@ -1,0 +1,125 @@
+<div class="heading">
+    <h2>Add Song</h2>
+</div>
+
+<div id = "modal">
+    <form [formGroup]="myForm" (ngSubmit)="submit()">
+        <div class="form-group">
+            <label class="l" for="name">Song Name</label>
+            <input 
+                formControlName="name"
+                id="name" 
+                type="text" 
+                class="form-control">
+            <div *ngIf="f.name.touched && f.name.invalid" class="alert alert-danger">
+                <div *ngIf="f.name.errors.required">Name is required.</div>
+            </div>
+            <div *ngIf="isSongPresent" class="alert alert-danger">
+                <div>Song Already Present</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="l" for="dor">Date Of Release</label>
+            <input 
+                formControlName="dor"
+                id="dor" 
+                type="date" 
+                class="form-control">
+            <div *ngIf="f.name.touched && f.name.invalid" class="alert alert-danger">
+                <div *ngIf="f.name.errors.required">Date Of Release is required.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="l" for="file">Cover Image</label>
+            <input 
+                formControlName="file"
+                id="file" 
+                type="file" 
+                class="form-control"
+                (change)="onFileChange($event)">
+            <div *ngIf="f.file.touched && f.file.invalid" class="alert alert-danger">
+                <div *ngIf="f.file.errors.required">File is required.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="l" for="aname">Artist Name</label>
+            <ng-multiselect-dropdown
+                id="aname"
+                [placeholder]="'Select Artist'"
+                [settings]="dropdownSettings"
+                [data]="dropdownList"
+                formControlName="aname"
+                class="form-control">
+            </ng-multiselect-dropdown>
+            <div *ngIf="f.aname.touched && f.aname.invalid" class="alert alert-danger">
+                <div *ngIf="f.aname.errors.required">Artist name is required.</div>
+            </div>
+            <!-- <div>
+                <button>Add Artist</button>
+            </div> -->
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    <button class="aabtn" (click)="openModal('custom-modal-1')">Add Artist</button>
+   
+</div>
+
+
+<jw-modal id="custom-modal-1">
+    <div class="heading">
+        <h3>Add Artist</h3>
+    </div>
+	<div id = "modal1">
+        <form [formGroup]="artistForm" (ngSubmit)="addArtist()">
+            <div class="form-group">
+                <label for="name">Artist Name</label>
+                <input 
+                    formControlName="name"
+                    id="name" 
+                    type="text" 
+                    class="form-control">
+                <div *ngIf="f1.name.touched && f1.name.invalid" class="alert alert-danger">
+                    <div *ngIf="f1.name.errors?.required">Name is required.</div>
+                </div>
+                
+            </div>
+            <div class="form-group">
+                <label for="dob">Date Of Birth</label>
+                <input 
+                    formControlName="dob"
+                    id="dob" 
+                    type="date" 
+                    class="form-control">
+                <div *ngIf="f1.dob.touched && f.name.invalid" class="alert alert-danger">
+                    <div *ngIf="f1.dob.errors?.required">Date Of Release is required.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <input 
+                    formControlName="bio"
+                    id="bio" 
+                    type="text" 
+                    class="form-control">
+                <div *ngIf="f1.bio.touched && f1.bio.invalid" class="alert alert-danger">
+                    <div *ngIf="f1.bio.errors?.required">Bio is required.</div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Add Artist</button>
+        </form>
+        <div class="wrap">
+            <button (click)="closeModal('custom-modal-1')">cancel</button>
+        </div>
+		<!-- <button (click)="closeModal('custom-modal-1')">cancel</button> -->
+	</div>
+	
+</jw-modal>
+<jw-modal id="custom-modal-3">
+	<div id = "modal">
+		<div style="color: green;">
+			{{txt}} Added SuccesFully;
+		</div>
+		<button (click)="closeModal('custom-modal-3')">close</button>
+	</div>
+	
+</jw-modal>

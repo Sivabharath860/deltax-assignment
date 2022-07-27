@@ -1,0 +1,28 @@
+#modal{
+	display:flex;
+	justify-content: center;
+	/* flex-direction: column; */
+}
+.wrap{
+    display:flex;
+    justify-content: center;
+}
+#modal1{
+    display:flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.l{
+    color:whitesmoke;
+}
+.heading{
+    text-align: center;
+}
+h2{
+    color:whitesmoke;
+}
+.aabtn{
+    height: 30px;
+    width: 120px;
+    margin-top: 210px;
+}
