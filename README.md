@@ -3,23 +3,24 @@
 
 ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/addA.png?raw=true)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
 
 This is a spotify clone developed using Angular, Node js, MySql.
 
 ## Features
 
 - Display's Top 10 songs based on average user rating.
-- [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+- ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/topTenS.png?raw=true)
 - Display's Top 10 artists based on average rating of his/her songs.
-- [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+- ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/topTenA.png?raw=true)
 - User can rate songs on a scale of [1-5].
-- [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+- ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/addS.png?raw=true)
 - User can add a new song with existing artists. 
-- [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+- ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/addS.png?raw=true)
 - Incase the artist is not in the database ,user can add a new artist in the same screen.
-- [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+- ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/addA.png?raw=true)
 - Also included a user authentication page.
+- ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/login.png?raw=true)
 
 # Database Tables:
 - users table ( userId, userName, password, email ).
