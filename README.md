@@ -10,7 +10,7 @@ This is a spotify clone developed using Angular, Node js, MySql.
 ## Features
 
 - Display's Top 10 songs based on average user rating.
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+- [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 - Display's Top 10 artists based on average rating of his/her songs.
 - [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 - User can rate songs on a scale of [1-5].
