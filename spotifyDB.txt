@@ -7,8 +7,19 @@ CREATE TABLE `spotify`.`users` ( `userId` INT(4) NOT NULL AUTO_INCREMENT , `emai
 #Insert values into users table
 INSERT INTO `users`(`email`, `password`, `userName`) VALUES ('ram@gmail.com','14550','ramA'),('bheem@gmail.com','14544','bheemG'),('malli@yahoo.com','12345','malliG'), ('scott@gmail.com','88888','scottB');
 
+#user authentication
+SELECT * FROM users WHERE userName = ? AND password = ?;
+
 #create table songs
 CREATE TABLE `spotify`.`songs` ( `songId` INT(4) NOT NULL AUTO_INCREMENT , `songName` VARCHAR(20) NOT NULL , `dor` DATE NOT NULL , `image` BLOB NOT NULL, PRIMARY KEY (`songId`) ) ENGINE = InnoDB;
+
+#Insert into songs table
+INSERT INTO  spotify.songs (songName,dor,image) VALUES (?,?,?);
+
+#check if a song is present in songs table
+SELECT songName,songId FROM songs WHERE songName LIKE 'rrr%';
+#get all songs
+SELECT s.songId,s.songName,s.dor from spotify.songs as s;
 
 #create table artists
 CREATE TABLE `spotify`.`artists` ( `artistId` INT(4) NOT NULL AUTO_INCREMENT , `name` VARCHAR(25) NOT NULL , `dob` DATE NOT NULL , `bio` TEXT NOT NULL , PRIMARY KEY (`artistId`)) ENGINE = InnoDB;
@@ -61,10 +72,10 @@ INNER JOIN spotify.artist_song as a_s ON a.artistId = a_s.artistId
 JOIN(SELECT songId, AVG(sr.rating) AS avg_rating FROM spotify.song_rating as sr GROUP BY sr.songId ORDER BY AVG(sr.rating) DESC)d ON a_s.songId IN (d.songId)  GROUP BY a.name ORDER BY d.avg_rating DESC LIMIT 10;
 
 #top 10 songs and with artits names and avg rating
-SELECT d.sname,d.sid,d.average_rating, a.name FROM spotify.artists AS a 
+SELECT d.sname,d.sid,d.average_rating, a.name, d.image FROM spotify.artists AS a 
 INNER JOIN spotify.artist_song as a_s
 ON a.artistId = a_s.artistId 
-RIGHT JOIN(SELECT s.songName AS sname, sr.songId AS sid, AVG(sr.rating) AS average_rating 
+RIGHT JOIN(SELECT s.songName AS sname, sr.songId AS sid, AVG(sr.rating) AS average_rating ,s.image AS image
 FROM spotify.song_rating AS sr 
      INNER JOIN spotify.songs AS s 
      ON sr.songId = s.songId
