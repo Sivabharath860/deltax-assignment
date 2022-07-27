@@ -14,7 +14,9 @@ This is a spotify clone developed using Angular, Node js, MySql.
 # Display's Top 10 artists based on average rating of his/her songs.
 - ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/topTenA.png?raw=true)
 # User can rate songs on a scale of [1-5].
-- ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/addS.png?raw=true)
+- ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/rsong.png?raw=true)
+- ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/rating.png?raw=true)
+- ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/afterRate.png?raw=true)
 # User can add a new song with existing artists. 
 - ![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/addS.png?raw=true)
 # Incase the artist is not in the database ,user can add a new artist in the same screen.
