@@ -1,0 +1,125 @@
+/* html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	font-family: sans-serif;
+	font-weight: 100;
+} */
+
+.container {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+thead{
+	border-bottom: rgb(20, 20, 20);
+	border-radius: 2px;
+	background: transparent;
+}
+th,
+td {
+	padding: 15px;
+	background: transparent;
+	/* background-color: rgba(136, 139, 91, 0.2); */
+	color: rgb(255, 253, 253);
+}
+
+th {
+	text-align: left;
+	color:#ccc;
+	border-bottom: rgb(206, 200, 200);
+	border-radius: 2px;
+}
+
+
+/* th {
+	background-color: #55608f;
+} */
+
+.icon{
+	width: 60px;
+	height: auto;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+#custom-modal-1{
+	width: 100px;
+}
+
+#modal{
+	display:flex;
+	justify-content: center;
+}
+
+.ico{
+	width: 20px;
+	height: 20px;
+}
+
+.ico:hover{
+	width: 24px;
+	height: 24px;
+}
+
+.rating{
+	display: flex;
+	
+}
+.btn{
+	border-color: white;
+}
+
+.asbtn{
+	display: flex;
+	justify-content: flex-end;
+}
+h2{
+	color:aliceblue;
+}
