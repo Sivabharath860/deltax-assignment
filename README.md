@@ -1,7 +1,7 @@
 # dx-assignment
 ## _Spotify Clone_
 
-![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/addA.png?raw=true)
+![plot](https://github.com/Sivabharath860/deltax-assignment/blob/main/images/mainPage.png?raw=true)
 
 
 
